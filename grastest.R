@@ -9,6 +9,10 @@ library(tidyverse)
 library(vroom)
 library(patchwork)
 
+library(vegperiod)
+
+vegperiod::read.DWDstations()
+
 help(grasprog)
 
 inrea_weather <- read_csv2("inrea/meteo.csv") |>  
